@@ -77,7 +77,7 @@ def write_seqs(filename):
 
         except:
             sys.stderr.write("ERROR: File {} is not a proper/supported protein structure file.".format(filename))
-            sys.exit(1)
+            return
 
     if is_CIF:
         name, organism, resolution = get_info_from_cif_dict(filename)
