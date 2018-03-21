@@ -76,7 +76,7 @@ def write_seqs(filename):
             is_CIF = True
 
         except:
-            sys.stderr.write("ERROR: File {} is not a proper/supported protein structure file.".format(filename))
+            sys.stderr.write("ERROR: File {} is not a proper/supported protein structure file.\n".format(filename))
             return
 
     if is_CIF:
